@@ -1,0 +1,18 @@
+{
+  "name": "mern_setup",
+  "version": "1.0.0",
+  "description": "Boilerplate code for MERN stack setup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkirsch-LF/mern_setup.git"
+  },
+  "author": "James Kirsch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
