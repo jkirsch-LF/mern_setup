@@ -4,7 +4,11 @@
   "description": "Boilerplate code for MERN stack setup",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "acho \"Error: no test specified\" && exit1 "
   },
   "repository": {
     "type": "git",
@@ -13,6 +17,11 @@
   "author": "James Kirsch",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.12"
   }
 }
